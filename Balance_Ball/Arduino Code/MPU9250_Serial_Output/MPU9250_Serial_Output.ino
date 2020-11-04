@@ -32,7 +32,7 @@ void loop() {
     mpu.update();
     if (Serial.available() > 0) {
       int inByte = Serial.read();
-      mpu.printACcl();
+      mpu.printAcc();
     }
     prev_ms = millis();
   }
